@@ -189,9 +189,7 @@ li {
         display: none;
         background-color:rgb(248, 248, 244);
     }
-    .nav-menu ul li {
-        /* padding: 10px; */
-    }
+   
 
     .nav-menu ul.active {
         display: block;
