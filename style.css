@@ -114,7 +114,7 @@ li {
 }
 
 .hero-section .btn-element .get-btn{
-    padding: 0.89rem 2.5rem;
+    padding: 0.89rem 2rem;
     background-color: var(--primary-color);
     color: #fff;
     border-radius: 12px;
@@ -319,5 +319,4 @@ li {
     .hero-section .btn-element a{
        font-size: 13px;
     }
-    
 }
