@@ -1,4 +1,5 @@
-// you code goes hereconst hamburgerBtnImg = document.querySelector('.nav-right-element button');
+// you code goes here
+const hamburgerBtnImg = document.querySelector('.nav-right-element button');
 
 const navMenu = document.querySelector('.nav-menu ul');
 
@@ -9,7 +10,7 @@ function openMenu() {
     navMenu.classList.toggle('active');
 
     if(navMenu.classList.contains('active')) {
-        hamburgerBtnImg.innerHTML = `<img src="./Img/close.png" alt="">`;
+         hamburgerBtnImg.innerHTML = `<img src="./Img/close.png" alt="">`;
 
     } else {
         hamburgerBtnImg.innerHTML = `<img src="./Img/menu.png" alt="">`;
