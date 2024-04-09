@@ -1,4 +1,4 @@
-// you code goes hereconst hamburgerBtnImg = document.querySelector('.nav-right-element button');
+const hamburgerBtnImg = document.querySelector('.nav-right-element button');
 
 const navMenu = document.querySelector('.nav-menu ul');
 
