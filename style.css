@@ -23,6 +23,7 @@ body {
     min-height: 100dvh;
     display: flex;
     justify-content: center;
+    overflow-x: hidden
 }
 .container{
     width : 100%;
@@ -30,7 +31,7 @@ body {
     padding-inline : 1.5rem !important;
     display: flex;
     flex-direction: column;
-    background-color : var(--base);
+    /* background-color : var(--base); */
 }
 
 
@@ -97,6 +98,11 @@ a{
     cursor: pointer;
 }
 
+.menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+}
+
 
 /* main */
 main{
@@ -105,6 +111,9 @@ main{
     padding-block : 2rem;
     align-items: center;
     gap : 1rem;
+}
+main > p > br, main > span > br{
+    display: none;
 }
 
 .hero{
@@ -122,6 +131,11 @@ main{
     display: none;
 }
 
+.img-s{
+    object-fit: contain;
+    width: 100%;
+}
+
 .hero strong {
     color : var(--primary);
     font-weight: bold;
@@ -131,27 +145,76 @@ main p{
     text-align: center;
 }
 
+.modal{
+    z-index: 10;
+    min-height: 100%;
+    box-sizing: border-box;
+    border : none;
+    outline : none;
+    color : var(--gray);
+    min-width: 350px;
+    padding: 1rem;
+    position: fixed;
+}
 
+.modal *{
+    outline: none;
+}
+
+.modal .logo{
+    font-size: 20px;
+}
+.modal .close-modal{
+    color: var(--primary);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-url{
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+
+}
+.modal-url-main{
+    margin-top: 1rem;
+}
+.modal-url-end{
+    position: absolute;
+    bottom : 1rem;
+}
+
+.modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 /* sm */
 @media (min-width : 640px) {
     .container{
         max-width: 640px;
-        background-color:var(--sm);
+        /* background-color:var(--sm); */
     }
 }
 /* md */
 @media (min-width : 768px) {
     .container{
         max-width: 768px;
-        background-color: var(--md);
+        /* background-color: var(--md); */
+    }
+    main > p > br, main>span>br{
+        display: inline !important;
     }
 }
 /* lg */
 @media (min-width : 1024px) {
     .container{
         max-width:1024px;
-        background-color: var(--lg);
+        /* background-color: var(--lg); */
     }
     .login{
         display: none !important;
@@ -180,7 +243,7 @@ main p{
 @media (min-width :  1280px) {
     .container{
         max-width: 1280px;
-        background-color: var(--xl);
+        /* background-color: var(--xl); */
     }
     .nav-url{
         gap : 2rem;
@@ -193,6 +256,6 @@ main p{
 @media (min-width :  1536px) {
     .container{
         max-width: 1536px;
-        background-color: var(--xl-2);
+        /* background-color: var(--xl-2); */
     }
 }
